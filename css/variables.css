@@ -1,0 +1,35 @@
+:root{
+    /* ### Primary */
+
+    --IOS-Btn: hsl(171, 66%, 44%);
+    --IOS-Shadow: hsl(171, 66%, 40%);
+    --Mac-Btn: hsl(233, 100%, 69%);
+    --Mac-Shadow: hsl(233, 100%, 65%);
+
+    /* ### Neutral */
+
+    --Title: hsl(210, 10%, 33%);
+    --Links: hsl(210, 10%, 33%);
+    --ActiveStates: hsl(171, 66%, 44%);
+    --FontColor: hsl(201, 11%, 66%);
+    --FooterBgColor: hsla(201, 11%, 66%, 0.5);
+
+    /* ## Typography */
+
+    /* ### Body Copy */
+
+    --Fontsize: 18px
+
+    /* ### Fonts */
+
+    /* --Family: [Bai Jamjuree](https://fonts.google.com/specimen/Bai+Jamjuree) */
+    /* - Weights: 400, 600 */
+
+    /* ## Icons */
+
+    /* For the social icons, you can use the SVGs provided or a font icon library. Some font icon library suggestions can be found below: */
+
+    /* --[Font Awesome](https://fontawesome.com) */
+    /* --[IcoMoon](https://icomoon.io) */
+    /* --[Ionicons](https://ionicons.com) */
+}

@@ -1,0 +1,48 @@
+@media (max-width: 900px) {
+    body {
+        grid-template-rows: 
+            80vh max-content
+        ;
+    }
+    section {
+        margin: 0 2rem;
+    }
+    .button-container {
+        margin: 0;
+    }
+    /* 2º CARD STYLE */
+    .snippets-track {
+        margin-top: 4.5rem;
+    }
+    .snippets-track .snippets {
+        grid-template-columns: 1fr;
+    }
+    .snippets .snippets-img img {
+        position: static;
+    }
+    .snippets-info {
+        margin-top: 10rem;
+        gap: 5rem;
+    }
+    /* 4º CARD STYLE */
+    .workflow .description p{
+        margin-bottom: 5rem;
+    }
+    /* FOOTER Card */
+    .footer-header {
+        flex-direction: column;
+    }
+    .footer .footer-menu ul{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .footer .footer-menu ul li a{
+        display: block;
+        padding: 1rem;
+    }
+    .media {
+        margin: 5rem 0;
+    }
+  
+}

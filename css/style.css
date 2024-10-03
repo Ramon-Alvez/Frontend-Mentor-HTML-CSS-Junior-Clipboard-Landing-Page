@@ -1,0 +1,266 @@
+html {
+    font-size: 62.5%;
+}
+body {
+    display: grid;
+    grid-template-areas: 
+        "header"
+        "snippets-track"
+        "platforms"
+        "workflow"
+        "logos-section"
+        "download"
+        "footer"
+    ;
+    grid-template-columns: 100%;
+    grid-template-rows: 
+        80vh repeat(2, 1fr) repeat(4, max-content)
+    ;
+    text-align: center;
+    font-family: "Bai Jamjuree", sans-serif;
+    font-size: 1.8rem;
+    color: var(--FontColor);
+}
+h1, h2, h3 {
+    color: var(--Title);
+}
+
+/* GRID AREA CONFIG */
+.header {
+    grid-area: header;
+}
+.snippets-track {
+    grid-area: snippets-track;
+}
+.platforms {
+    grid-area: platforms;
+}
+.workflow {
+    grid-area: workflow;
+}
+.logos-section {
+    grid-area: logos-section;
+}
+.download {
+    grid-area: download;
+}
+.footer {
+    grid-area: footer;
+    background-color: var(--FooterBgColor);
+}
+/* ------------------------------------------- */
+
+/* HEADER STYLE */
+.header{
+    background: url(../images/background-pattern/bg-header-desktop.png) no-repeat center center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.header .logo-container {
+    max-width: 100px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header .logo-container a, 
+.header .logo-container img {
+    display: block;
+    width: 100%;
+}
+.header .description h1{
+    margin: 1rem 0;
+}
+
+
+/* SPECIAL -> LOGO HOVER */
+.logo {
+    transition: 0.3s ease-in-out;
+}
+.logo:hover {
+    transform: scale(1.02);
+}
+
+
+/* CONTENTS MAIN SIZING */
+.description {
+    max-width: 66rem;
+    margin: 0 auto;
+    line-height: 1.5;
+}
+.description h2 {
+    padding: 2rem;
+}
+.description p {
+    margin-bottom: 8rem;
+}
+
+/* BUTTON CONFIGS */
+.button {
+    padding: 1rem 3rem;
+    display: inline-block;
+    border-radius: 2.8rem;
+    margin: 1rem;
+    color: #fff;
+    transition: 0.3s ease-in-out;
+}
+.button:hover {
+    opacity: .7;
+}
+.button.ios-btn {
+    background-color: var(--IOS-Btn);
+    border: .1rem solid var(--IOS-Shadow);
+    border-bottom: .3rem solid var(--IOS-Shadow);
+    box-shadow: 0 1rem 2rem -1.5rem var(--IOS-Shadow);
+}
+.button.mac-btn {
+    background-color: var(--Mac-Btn);
+    border: .1rem solid var(--Mac-Shadow);
+    border-bottom: .3rem solid var(--Mac-Shadow);
+    box-shadow: 0 1rem 2rem -1.5rem var(--Mac-Shadow);
+}
+.button-container {
+    margin-bottom: 15rem;
+}
+
+
+/* 2º CARD STYLE */
+.snippets-track .snippets {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.snippets .snippets-img img {
+    display: block;
+    width: 100%;
+    position: relative;
+    left: -6rem;
+}
+.snippets-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10rem;
+}
+.snippets-info section {
+    max-width: 40rem;
+    text-align: left;
+}
+
+/* 3º CARD STYLE */
+.platforms {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10rem;
+}
+.platforms .platforms-container {
+    max-width: 100rem;
+}
+.platforms .platforms-container img{
+    display: block;
+    width: 100%;
+}
+
+/* 4º CARD STYLE */
+.workflow .boosts{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 10rem;
+}
+.workflow .boosts section {
+    max-width: 40rem;
+    margin: 0 1rem;
+}
+
+/* WORKFLOW ICONS SIZING */
+.workflow .boosts .icon-container {
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5rem 0;
+}
+.workflow .boosts .icon-container img {
+    display: block;
+}
+
+/* 5º CARD STYLE */
+.logos-section {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5rem;
+    margin: 10rem 0;
+}
+.logos-section div {
+    min-width: 20rem;
+    min-height: 6.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logos-section img {
+    display: block;
+}
+/* 6º CARD STYLE */ 
+.download {
+    margin-bottom: 10rem;
+}
+
+/* FOOTER STYLE */
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.footer a{
+    color: var(--Links);
+    transition: 0.2s ease-in-out;
+}
+.footer a:hover {
+    color: var(--ActiveStates);
+}
+.footer-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.footer-logo a,
+.footer-logo img {
+    height: 6rem;
+    display: block;
+    margin: 5rem 0;
+}
+.footer .footer-menu ul{
+    column-count: 3;
+    text-align: left;
+}
+.footer .footer-menu ul li{
+    margin: 0 5rem;
+    display: block;
+}
+.media {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+.media a,
+.media i {
+    display: block;
+    font-size: 4rem;
+}
+
+.attribution {
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--Title);
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
